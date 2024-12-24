@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Titan+One&display=swap');
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    background-color: #f4f9f9;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #2a2a72;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.logo img {
+    align-items: center;
+    height: 120px;
+    width: auto; /* Adjust the logo size */
+}
+
+.dropdown {
+    position: relative;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ff8303;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    top: 2.5rem;
+    left: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 0.5rem 0;
+    display: block;
+    font-size: 0.9rem;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* First Slide */
+.first_slide {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('"/images/Aesthetic_wallpaper.jpg"') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.first_slide h1 {
+    font-family: 'Titan One', cursive;
+    font-size: 4rem;
+    text-align: center;
+}
+
+/* Main Content */
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 5rem;
+}
+
+/* Table of Contents */
+.table-of-contents {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table-of-contents h2 {
+    font-family: 'Titan One', cursive;
+    color: #ff8303; 
+    margin-bottom: 1rem;
+}
+
+.table-of-contents a {
+    display: block;
+    color: #2a2a72;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.table-of-contents a:hover {
+    color: #ff8303; 
+}
+
+/* Content Panel */
+.content-panel {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.research-content section {
+    margin-bottom: 2rem;
+}
+
+.research-content section h2 {
+    font-family: 'Titan One', cursive;
+    color: #2a2a72;
+    margin-bottom: 1rem;
+}
+
+.research-content section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Buttons and Links */
+.dropdown:hover {
+    color: #ff8303; 
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2a2a72;
+    color: #fff;
+    font-size: 0.9rem;
+}
